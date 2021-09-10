@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Jogar Dados</string>
+    <string name="rotulo_quantidade_dados">Por favor, informe a quantidade de dados desejada.</string>
+    <string name="rotulo_um_dado">Um dado</string>
+    <string name="rotulo_dois_dados">Dois dados</string>
+    <string name="button_vamos_la">Vamos lá!</string>
 </resources>

@@ -6,15 +6,61 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/rotuloQuantidadeDados"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margem_padrao"
+        android:layout_marginTop="@dimen/margem_padrao"
+        android:gravity="center"
+        android:text="@string/rotulo_quantidade_dados"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroupQuantidadeDados"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupQuantidadeDados"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/espaco_entre_itens"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@id/rotuloQuantidadeDados"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/rotuloQuantidadeDados"
+        app:layout_constraintTop_toBottomOf="@+id/rotuloQuantidadeDados">
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+
+            android:id="@+id/rBUmDado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rotulo_um_dado" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/rbDoisDados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rotulo_dois_dados" />
+
+    </RadioGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginTop="@dimen/espaco_entre_itens"
+        android:text="@string/button_vamos_la"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupQuantidadeDados" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
