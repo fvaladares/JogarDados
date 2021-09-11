@@ -29,7 +29,7 @@
         android:layout_marginTop="@dimen/espaco_entre_itens"
         android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/buttonVamosLa"
         app:layout_constraintEnd_toEndOf="@id/rotuloQuantidadeDados"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@id/rotuloQuantidadeDados"
@@ -51,7 +51,7 @@
     </RadioGroup>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/button"
+        android:id="@+id/buttonVamosLa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/espaco_entre_itens"

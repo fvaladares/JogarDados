@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="#BDBDBD"
     tools:context=".RolarDadosActivity">
 
     <ImageView
@@ -30,6 +30,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivDado1" />
 
+    <!--TODO(Criar um botão para retornar à activity anterior) -->
     <Button
         android:id="@+id/btRolarDados"
         android:layout_width="wrap_content"
